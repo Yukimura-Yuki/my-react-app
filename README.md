@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Circle Selection Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Это приложение на React позволяет добавлять, перемещать, выделять и удалять круги на слайде. Удаление выделенных кругов можно осуществить нажатием клавиши `Backspace`.
 
-## Available Scripts
+## Установка и запуск
 
-In the project directory, you can run:
+Следуйте приведенным ниже инструкциям для запуска проекта на вашем локальном компьютере.
 
-### `npm start`
+### 1. Клонирование репозитория
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Клонируйте репозиторий на ваш локальный компьютер с помощью команд:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+git clone https://github.com/yourusername/circle-selection-project.git
+cd circle-selection-project
+```
 
-### `npm test`
+### 2. Установка зависимостей
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Убедитесь, что у вас установлены Node.js и npm (Node Package Manager). Установите все необходимые зависимости командой:
 
-### `npm run build`
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Запуск приложения
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+После установки зависимостей запустите приложение командой:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+### 4. Открытие приложения в браузере
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Приложение будет доступно по адресу:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+http://localhost:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Перейдите по этому адресу в браузере, чтобы использовать приложение.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Структура проекта
 
-## Learn More
+- `App.js`: Основной компонент приложения, который управляет состоянием кругов и их отображением.
+- `Circle.js`: Компонент, представляющий отдельный круг; обрабатывает выделение и перетаскивание круга.
+- `App.css` и `Circle.css`: Стили для компонентов.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Основные возможности
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Добавление круга**: Нажмите кнопку "Добавить круг", чтобы создать круг в случайной позиции и размере на слайде.
+- **Перемещение кругов**: Круги можно перетаскивать мышью.
+- **Выделение кругов**: Щелкните по кругу, чтобы выделить его. Возможность выделить несколько кругов одновременно.
+- **Удаление кругов**: Нажмите клавишу Backspace, чтобы удалить все выделенные круги.
 
-### Code Splitting
+## Требования
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Для корректной работы приложения убедитесь, что установлены:
 
-### Analyzing the Bundle Size
+- Node.js (рекомендуемая версия 14 и выше)
+- npm (устанавливается вместе с Node.js)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Не забудьте обновить ссылку на репозиторий, заменив `yourusername` на ваше реальное имя пользователя на GitHub.
