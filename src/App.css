@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
+.app {
+  display: flex;/* Устанавливает флекс-контейнер*/
+  flex-direction: column;/* Располагает кнопку и слайд в колонку */
+  align-items: center;/* Выравнивает элементы по центру по горизонтали */
+  margin-top: 20px;/* Отступ сверху для всего содержимого приложения */
+}
+button {
+  margin-bottom: 10px; /* Добавляет отступ между кнопкой и слайдом */
+  padding: 10px 20px;/* Внутренние отступы для кнопки*/
+  font-size: 16px;/* Размер шрифта текста на кнопке */
+  color: #ffffff;/* Цвет текста кнопки */
+  background-color: #ff009d;/* Фон кнопки*/
+  border-color:#362d32/* Цвет обводки кнопки */
+}
+.slide {
+  position: relative;/* Позволяет привязать круги к определённой позиции внутри его слайда */
+  width: 80vw;/* Устанавливает ширину слайда от ширины окна браузера */
+  height: 60vh;/* Устанавливает высоту слайда от высоты окна браузера */
+  background-color: #f6b7db;/* Фон слайда */
+  border: 1px solid #362d32;/* Цвет и размер Границы вокруг слайда */
+  overflow: hidden;/* Скрывает части кругов, которые выходят за пределы слайда */
+  margin-bottom: 20px;/* Отступ снизу, отделяющий слайд от других элементов */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
